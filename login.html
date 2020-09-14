@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Example</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/all.css">
+    <link rel="shortcut icon" href="asset/image/evos-esport.png" type="image/x-icon">
+    <style>
+        #vector{
+            background-image: url(asset/image/logo.png);
+            background-color: aqua;
+            background-position: center;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4" id="sidebar">
+                <!-- logo -->
+                <div class="d-flex flex-column">
+                    <img class="mt-5" width="160" height="51" src="asset/image/logo1.png">
+                </div>
+                <!-- login info -->
+                <div class="d-flex flex-column pt-5">
+                    <h6>login</h6>
+                    <p class="lead">Masukkan akun anda untuk login</p>
+                </div>
+                <!-- login form -->
+                <div class="d-flex flex-column">
+                    <form class="border shadow-sm p-3 mb-0 bg-white">
+                        <div>
+                            <smal>Email</smal>
+                        </div>
+                        <input class="border-0" type="text" placeholder="Example@gmail.com"  style="width: 290px;">
+                    </form>
+                    <div class="d-flex flex-column">
+                        <form class="border shadow-sm p-3 mb-0 bg-white">
+                            <div>
+                                <smal>password</smal>
+                            </div>
+                            <input class="border-0" type="password" id="password" name="password" placeholder="password"  style="width: 290px;"> <i class="position-relative far fa-eye " id="togglePassword"></i>
+                            
+                        </form>   
+                    </div>
+                    <!-- login additional -->
+                    <div class="d-flex flex-row justify-content-between">
+                        <form><input type="checkbox"><small class="ml-2">Ingat saya</small></form>
+                        <div>
+                            <a href="#"><small>Lupa password</small></a>
+                        </div>
+                    </div>
+                    <!-- register -->
+                    <div class="d-flek-row mt-5">
+                        <button type="submit" class="btn btn-primary mr-4" data-togle="button" aria-pressed="false" >
+                            login</button>
+                        <button type="button" class="btn btn-outline-primary " data-togle="button" aria-pressed="false" data-toggle="modal" data-target="#modal">
+                            Daftar</button>
+                    </div>
+                    <!-- login footer -->
+                    <div class="d-flex-row">
+                        <p style=" margin-left: 150px;"><small>copyright&copy;2020</small></p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="col-8 vh-100 border" id="vector"></div>
+                
+        </div>
+    </div>
+</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img width="160" height="51" src= "asset/image/logo1.png" alt="logo7">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <!-- modal body -->
+                                <div class="modal-body">
+                                    <div class="d-flex flex-column">
+                                        
+                                        <h3 class="mt-2 " >Registrasi</h3>
+                                        <p> Bagi Yang Belum punya Bisa Regestrasi</p>
+                                        <form>
+                                            <div class="border shadow-sm p-3 mb-5 bg-white">
+                                            <div>
+                                                <smal class="mt-1">Email</smal>
+                                            </div>
+                                            <input class="mt-1 border-0" type="text" placeholder="Example@gmail.com">
+                                        </div>
+                                        </form>
+                                        <div class="d-flex flex-column">
+                                            <form >
+                                                <div class="border shadow-sm p-3 mb-0 bg-white">
+                                                <div>
+                                                    <smal class="mt-1">password</smal>
+                                                </div>
+
+                                                <input class="mt-1 border-0" type="password" id="password" name="password" placeholder="password"  style="width: 300px;"> <i class="position-relative far fa-eye " id="togglePassword"></i>
+                                                </div>
+                                                <div class=" border shadow-sm p-3 mb-5 bg-white">
+                                                <div>
+                                                    <smal class="mt-1">konfirmasi password</smal>
+                                                </div>
+                                                <input class="mt-1 border-0" type="password" id="password" name="password" placeholder="konfirmasi password"  style="width: 300px;"><i class="position-relative far fa-eye " id="togglePassword"></i>
+                                            </div>
+                                            </form>   
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <div class="d-flex flex-row">
+                                                
+                                                <input type="checkbox" class="form-check-input mt-3" id="exampleCheck1">
+                                                <label class="form-check-label mt-" for="exampleCheck1">
+                                                    <p>Saya Menyetujui <a href="#">Syarat dan Ketentuan</a> dan <a href="#">Kebijakan Privasi</a> Yang Berlaku.</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-end">
+                                            <button type="button" class="btn btn-primary">Daftar</button>
+                                        </div>
+                                    </div>  
+                                    
+                                </div>
+                                <!-- <div class="modal-footer">  
+                                    <button type="button" class="btn btn-primary">Register</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer -->
+                    <!-- <div class="d-flex flex-row">
+                        copyright &copy; 2020
+                    </div> -->
+                </div>
+            </div>
+            
+                <!-- <img class="bg-primary" src="asset/image/logo.png" alt="logo"> -->
+            </div>
+            
+        </div>
+        
+        <script src="asset/js/jQuary-3.5.1.full.js"></script>
+        <script src="asset/js/popper.min.js"></script>
+        <script src="asset/js/bootstrap.min.js"></script>
+        <script src="asset//js/matane.js"></script>
+    </body>
+    </html>
